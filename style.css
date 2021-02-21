@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .main {
+  padding: 6vh;
+}
+
+.wrapper .main.info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#234bad), to(#112b6a));
+  background-image: linear-gradient(#234bad, #112b6a);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .main.info .content-wrapper {
+  max-width: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .main.info .content-wrapper img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.wrapper .main.info h1 {
+  color: white;
+  font-size: 5.96vh;
+  margin-top: 3vh;
+  font-weight: 400;
+}
+
+.wrapper .main.info h1 span {
+  color: #f4b225;
+  display: block;
+  -webkit-filter: brightness(1.12);
+          filter: brightness(1.12);
+  font-weight: 900;
+}
+
+.wrapper .main.info p {
+  color: white;
+  font-size: 2.7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2vh;
+  opacity: 0.97;
+  font-weight: 400;
+}
+
+.wrapper .main.form {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  background-color: #f4b225;
+  background-image: url("/img/hiker-travel.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .main.form .card {
+  display: block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-filter: drop-shadow(0 0 0.75rem #3f3e075b);
+          filter: drop-shadow(0 0 0.75rem #3f3e075b);
+  color: white;
+  background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.517), rgba(255, 255, 255, 0.103));
+  -webkit-backdrop-filter: blur(0.7vh);
+          backdrop-filter: blur(0.7vh);
+  padding: 20px 40px;
+  border-radius: 5vh;
+}
+
+.wrapper .main.form .card h1 {
+  font-size: 3vh;
+  text-align: center;
+  font-weight: normal;
+  margin: 7vh 3vh;
+}
+
+.wrapper .main.form .card h1 span {
+  font-weight: bolder;
+}
+
+.wrapper .main.form .btn {
+  cursor: pointer;
+  font-size: 3vh;
+  font-weight: lighter;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.283);
+  padding: 15px;
+  font-family: inherit;
+  border: none;
+  border-radius: 999vh;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.wrapper .main.form .btn:focus {
+  outline: 0;
+}
+
+.wrapper .main.form .btn:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.wrapper .main.form .btn:hover {
+  background-color: rgba(0, 0, 0, 0.31);
+}
+
+.wrapper .main.form .text {
+  margin-top: 30px;
+}
+
+.wrapper .main.form .form-control {
+  position: relative;
+  margin: 3vh 0 5vh;
+}
+
+.wrapper .main.form .form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #ffffff solid;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 18px;
+  padding: 15px 0;
+  font-size: 18px;
+  color: white;
+  z-index: 1;
+}
+
+.wrapper .main.form .form-control input:focus,
+.wrapper .main.form .form-control input:valid {
+  outline: 0;
+}
+
+.wrapper .main.form .form-control label {
+  position: absolute;
+  top: 0px;
+}
+
+.wrapper .main.form .form-control label span {
+  display: inline-block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 2.3vh;
+  font-weight: lighter;
+  min-width: 0.5vh;
+  -webkit-transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .main.form .form-control input:focus + label span,
+.wrapper .main.form .form-control input:valid + label span {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+/*# sourceMappingURL=style.css.map */

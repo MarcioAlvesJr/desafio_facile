@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+$color-1: #234bad;
+$color-2: #f4b225;
+$color-3: rgb(255, 255, 255);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+
+  .main {
+    padding: 6vh;
+  }
+
+  .main.info {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-image: linear-gradient($color-1, #112b6a);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .content-wrapper {
+      max-width: 80vh;
+      display: flex;
+      flex-direction: column;
+
+      img {
+        align-self: center;
+      }
+    }
+    h1 {
+      color: $color-3;
+      font-size: 5.96vh;
+      margin-top: 3vh;
+      font-weight: 400;
+
+      span {
+        color: $color-2;
+        display: block;
+        filter: brightness(1.12);
+        font-weight: 900;
+      }
+    }
+    p {
+      color: $color-3;
+      font-size: 2.7vh;
+      display: flex;
+      margin-top: 2vh;
+      opacity: 0.97;
+      font-weight: 400;
+    }
+  }
+  .main.form {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: $color-2;
+    background-image: url("/img/hiker-travel.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      display: block;
+      height: fit-content;
+      filter: drop-shadow(0 0 0.75rem #3f3e075b);
+      color: $color-3;
+      background-image: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.517),
+        rgba(255, 255, 255, 0.103)
+      );
+      backdrop-filter: blur(0.7vh);
+      padding: 20px 40px;
+      border-radius: 5vh;
+
+      h1 {
+        font-size: 3vh;
+        text-align: center;
+        font-weight: normal;
+        margin: 7vh 3vh;
+
+        span {
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .btn {
+      cursor: pointer;
+      font-size: 3vh;
+      font-weight: lighter;
+      color: $color-3;
+      display: inline-block;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.283);
+      padding: 15px;
+      font-family: inherit;
+      border: none;
+      border-radius: 999vh;
+      transition: 0.1s ease-in;
+    }
+
+    .btn:focus {
+      outline: 0;
+    }
+
+    .btn:active {
+      transform: scale(0.95);
+    }
+
+    .btn:hover {
+      background-color: rgba(0, 0, 0, 0.31);
+    }
+
+    .text {
+      margin-top: 30px;
+    }
+
+    .form-control {
+      position: relative;
+      margin: 3vh 0 5vh;
+
+      input {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px #ffffff solid;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 18px;
+        padding: 15px 0;
+        font-size: 18px;
+        color: white;
+        z-index: 1;
+      }
+
+      input:focus,
+      input:valid {
+        outline: 0;
+      }
+    }
+
+    .form-control label {
+      position: absolute;
+      top: 0px;
+
+      span {
+        display: inline-block;
+        user-select: none;
+        font-size: 2.3vh;
+        font-weight: lighter;
+        min-width: 0.5vh;
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+    }
+
+    .form-control input:focus + label span,
+    .form-control input:valid + label span {
+      transform: translateY(-30px);
+    }
+  }
+}
