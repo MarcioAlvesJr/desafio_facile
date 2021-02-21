@@ -2,7 +2,6 @@
 
 <p align="center">
   <img alt="Exemple" src="https://github.com/MarcioAlvior/desafio_facile/blob/master/print.PNG" />
-  <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
 # Desafio
