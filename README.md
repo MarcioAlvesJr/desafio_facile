@@ -19,7 +19,9 @@ link deverá ser enviado para o e-mail: higor@facileviagens.com
 
 <br>
 <br>
-[Clique aqui](https://desafio-facile-marcio.netlify.app/) para ver a aplicação hosteado.
+Aplicação hosteada:
+https://desafio-facile-marcio.netlify.app/ 
 <br>
-[Clique aqui](https://www.figma.com/file/pvAn5sA8AfwyqrwM42dEzF/DESAFIO-DO-PROGRAMADOR-FACILE---M%C3%A1rcio-Adriano-Alves-Junior?node-id=0%3A1) para ver o design no figma.
+Design no Figma:
+https://www.figma.com/file/pvAn5sA8AfwyqrwM42dEzF/DESAFIO-DO-PROGRAMADOR-FACILE---M%C3%A1rcio-Adriano-Alves-Junior?node-id=0%3A1
 <br>
