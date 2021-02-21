@@ -15,9 +15,13 @@ $color-3: rgb(255, 255, 255);
 }
 
 body {
+  background-color: $color-1;
   min-height: 100vh;
+  overflow-x: hidden;
 }
-
+nav {
+  display: none;
+}
 .wrapper {
   min-height: 100vh;
   min-width: 100vw;
@@ -42,6 +46,7 @@ body {
       flex-direction: column;
 
       img {
+        max-width: 100%;
         align-self: center;
       }
     }
@@ -60,11 +65,15 @@ body {
     }
     p {
       color: $color-3;
-      font-size: 2.7vh;
+      font-size: 2.9vh;
       display: flex;
       margin-top: 2vh;
       opacity: 0.97;
       font-weight: 400;
+
+      img {
+        width: 40vh;
+      }
     }
   }
   .main.form {
@@ -163,7 +172,7 @@ body {
 
     .form-control label {
       position: absolute;
-      top: 0px;
+      top: 0.5vh;
 
       span {
         display: inline-block;
@@ -177,7 +186,58 @@ body {
 
     .form-control input:focus + label span,
     .form-control input:valid + label span {
-      transform: translateY(-30px);
+      transform: translateY(-3.5vh);
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .main.info p {
+    font-size: 2.5vh;
+    img {
+      height: 30vh;
+    }
+  }
+}
+
+@media (max-width: 761px) {
+  .main.info p {
+    display: block;
+    img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 561px) {
+  nav {
+    display: block;
+  }
+  nav {
+    background: linear-gradient($color-1 60%, rgba(0, 0, 0, 0));
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    img {
+      width: 100%;
+      padding: 2vh 15vh;
+    }
+  }
+  section.main.info {
+    padding-top: 0;
+  }
+
+  .content-wrapper a {
+    display: none;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .main.info p {
+    img {
+      display: block;
     }
   }
 }
