@@ -264,6 +264,7 @@ nav {
   }
   nav img {
     width: 100%;
+    margin-top: 3vh;
     padding: 2vh 15vh;
   }
   section.main.info {
