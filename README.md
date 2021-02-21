@@ -6,15 +6,13 @@
 
 # O Projeto
 
-Landing page que colhe informações do usuário (via formulário).
+Landing page que colhe informações do usuário (via formulário).<br>
 Aplicação desenvolvida em HTML, SCSS e JS. O design foi feito no Figma e formulario usando Netlify Forms.
 
 OBS:
 A caráter de teste as submissões da fórmula serão enviadas para o e-mail(
 
 higor@facileviagens.com) caso queira testar.
-
-<br>
 <br>
 Demonstração:
 https://desafio-facile-marcio.netlify.app/ 
