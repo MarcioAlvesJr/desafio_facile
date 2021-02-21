@@ -4,21 +4,16 @@
   <img alt="Exemple" src="https://github.com/MarcioAlvior/desafio_facile/blob/master/demonstration.gif" />
 </p>
 
-# Desafio
-
-Você deverá elaborar uma landing page que seja capaz
-de colher informações do usuário (via formulário) como:
-Nome completo e E-mail
-A mesma poderá ser desenvolvida em HTML, CSS, JS puro
-ou utilizando tecnologia a sua escolha.
-
-Requisitos mínimos: o código deve seguir boas práticas,
-uma boa arquitetura de pastas e ser disponibilizado no github
-link deverá ser enviado para o e-mail: higor@facileviagens.com
-
 # O Projeto
 
+Landing page que colhe informações do usuário (via formulário).
 Aplicação desenvolvida em HTML, SCSS e JS. O design foi feito no Figma e formulario usando Netlify Forms.
+
+OBS:
+A caráter de teste as submissões da fórmula serão enviadas para o e-mail(
+
+higor@facileviagens.com) caso queira testar.
+
 <br>
 <br>
 Demonstração:
