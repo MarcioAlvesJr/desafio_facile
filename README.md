@@ -19,7 +19,6 @@ link deverá ser enviado para o e-mail: higor@facileviagens.com
 # O Projeto
 
 Aplicação desenvolvida em HTML, SCSS e JS. O design foi feito no Figma e formulario usando Netlify Forms.
-
 <br>
 <br>
 Demonstração:
