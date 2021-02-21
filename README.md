@@ -2,7 +2,6 @@
 
 <p align="center">
   <img alt="Exemple" src="https://github.com/MarcioAlvior/desafio_facile/blob/master/print.PNG" />
-  <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-blue">
 </p>
 
 # Desafio
@@ -17,10 +16,14 @@ Requisitos mínimos: o código deve seguir boas práticas,
 uma boa arquitetura de pastas e ser disponibilizado no github
 link deverá ser enviado para o e-mail: higor@facileviagens.com
 
+# O Projeto
+
+Aplicação desenvolvida em HTML, SCSS e JS. O design foi feito no Figma e formulario usando Netlify Forms.
 <br>
 <br>
-Aplicação hosteada:
+Demonstração:
 https://desafio-facile-marcio.netlify.app/ 
+<br>
 <br>
 Design no Figma:
 https://www.figma.com/file/pvAn5sA8AfwyqrwM42dEzF/DESAFIO-DO-PROGRAMADOR-FACILE---M%C3%A1rcio-Adriano-Alves-Junior?node-id=0%3A1
