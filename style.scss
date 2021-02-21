@@ -13,7 +13,7 @@ $color-3: rgb(255, 255, 255);
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
-
+//General Styles
 body {
   background-color: $color-1;
   min-height: 100vh;
@@ -64,11 +64,10 @@ nav {
       }
     }
     p {
-      color: $color-3;
+      color: rgba(255, 255, 255, 0.896);
       font-size: 2.9vh;
       display: flex;
       margin-top: 2vh;
-      opacity: 0.97;
       font-weight: 400;
 
       img {
@@ -190,6 +189,28 @@ nav {
     }
   }
 }
+//Animation
+.logo.top,
+.logo.bottom,
+.left-text,
+.card {
+  transition: 1.8s ease;
+  opacity: 0;
+}
+
+.logo.top,
+.logo.bottom {
+  transform: translate(0, 0);
+}
+
+.left-text {
+  transform: translate(-3vh, 0);
+}
+.card {
+  transform: translate(3vh, 0);
+}
+
+//Media Queries
 
 @media (max-width: 850px) {
   .main.info p {
@@ -209,7 +230,7 @@ nav {
   }
 }
 
-@media (max-width: 561px) {
+@media (max-width: 1025px) {
   nav {
     display: block;
   }
@@ -220,6 +241,8 @@ nav {
     z-index: 100;
 
     img {
+      position: relative;
+      top: -2vh;
       width: 100%;
       margin-top: 3vh;
       padding: 2vh 15vh;
@@ -239,6 +262,15 @@ nav {
   .main.info p {
     img {
       display: block;
+    }
+  }
+}
+
+@media (max-width: 417px) {
+  .main.info p {
+    display: block;
+    img {
+      display: none;
     }
   }
 }

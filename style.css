@@ -89,13 +89,12 @@ nav {
 }
 
 .wrapper .main.info p {
-  color: white;
+  color: rgba(255, 255, 255, 0.896);
   font-size: 2.9vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 2vh;
-  opacity: 0.97;
   font-weight: 400;
 }
 
@@ -232,6 +231,31 @@ nav {
           transform: translateY(-3.5vh);
 }
 
+.logo.top,
+.logo.bottom,
+.left-text,
+.card {
+  -webkit-transition: 1.8s ease;
+  transition: 1.8s ease;
+  opacity: 0;
+}
+
+.logo.top,
+.logo.bottom {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.left-text {
+  -webkit-transform: translate(-3vh, 0);
+          transform: translate(-3vh, 0);
+}
+
+.card {
+  -webkit-transform: translate(3vh, 0);
+          transform: translate(3vh, 0);
+}
+
 @media (max-width: 850px) {
   .main.info p {
     font-size: 2.5vh;
@@ -250,7 +274,7 @@ nav {
   }
 }
 
-@media (max-width: 561px) {
+@media (max-width: 1025px) {
   nav {
     display: block;
   }
@@ -263,6 +287,8 @@ nav {
     z-index: 100;
   }
   nav img {
+    position: relative;
+    top: -2vh;
     width: 100%;
     margin-top: 3vh;
     padding: 2vh 15vh;
@@ -281,6 +307,15 @@ nav {
   }
   .main.info p img {
     display: block;
+  }
+}
+
+@media (max-width: 417px) {
+  .main.info p {
+    display: block;
+  }
+  .main.info p img {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
