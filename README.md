@@ -1,7 +1,7 @@
 # DESAFIO DO PROGRAMADOR FACILE
 
 <p align="center">
-  <img alt="Exemple" src="https://github.com/MarcioAlvior/desafio_facile/blob/master/print.PNG" />
+  <img alt="Exemple" src="https://github.com/MarcioAlvior/desafio_facile/blob/master/demonstration.gif" />
 </p>
 
 # Desafio
